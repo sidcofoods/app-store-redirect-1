@@ -15,6 +15,11 @@
 
     // Redirect on page load
     window.onload = redirectToAppStoreOrPlayStore;
+
+    // Redirect on click (for computers)
+    document.addEventListener('click', function() {
+      redirectToAppStoreOrPlayStore();
+    });
   </script>
 </head>
 <body>
