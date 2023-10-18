@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirect Page</title>
+  <script>
+    function redirectToAppStoreOrPlayStore() {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      
+      if (/android/i.test(userAgent)) {
+        window.location.href = "https://l.facebook.com/l.php?u=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.app.sidcofoodsuae%26fbclid%3DIwAR277FPkgiF3UFV9bh8Dw8XCJHtvzJPkxDpT8X8K6rEnOHzY-Ex7rwdyvrM&h=AT00QEb0MPqzkqKvnJ4XtNjGAW6BqDGKwwTQ1I-fGujyc9k6w5InpTT1CP7Gy9_6N5HbNpstjCZudIJyjHspzTI9qUZUuESVilMMFgw5fdce9Se-bxDRzdyxTw02q1pOgxRp&__tn__=-UK-R&c[0]=AT1jPqgGXnB5RCy_NDL7O1Fy9XYHtYq6Km3sErtM7byRJw7eX1JHsp-HGzIJaD7YM9H0TUML1s42dptkDXED6oKR_Y__fqhVxqipCuVx0ijeftNkWShtSl3eLjSYn0Svifgj6Ux883Y13GbHNFEOlM8F70ZiiIhBWCMQJwdSW4PH7lgLozvRbBmFcxlHfXYhXcIMgcvwDdbw";
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location.href = "https://l.facebook.com/l.php?u=https%3A%2F%2Fapps.apple.com%2Fae%2Fapp%2Fsidco-foods-uae%2Fid6446170500&h=AT3syYlJNGgAZeIqXX_04CP8wRpYtH0RyQ1HWx_iiH0AM-25O4EBaquDu9e4BZAmSmR3qZrsNwJwZgX7VfdupOIhQ12-VeIFTwMZ2WZuaIntwyJ2_rUlF_0ybVHmchUXiDsr&__tn__=-UK-R&c[0]=AT1jPqgGXnB5RCy_NDL7O1Fy9XYHtYq6Km3sErtM7byRJw7eX1JHsp-HGzIJaD7YM9H0TUML1s42dptkDXED6oKR_Y__fqhVxqipCuVx0ijeftNkWShtSl3eLjSYn0Svifgj6Ux883Y13GbHNFEOlM8F70ZiiIhBWCMQJwdSW4PH7lgLozvRbBmFcxlHfXYhXcIMgcvwDdbw";
+      }
+    }
+
+    // Redirect on page load
+    window.onload = redirectToAppStoreOrPlayStore;
+  </script>
+</head>
+<body>
+  <p>Redirecting to the app store...</p>
+</body>
+</html>
